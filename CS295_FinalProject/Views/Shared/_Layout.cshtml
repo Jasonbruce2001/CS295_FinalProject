@@ -3,49 +3,59 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CS295_FinalProject</title>
+    <title>@ViewData["Title"] - Eugene Fine Art</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CS295_FinalProject.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Warhammer 40K FanSite</a>
+                <a class="navbar-brand">Eugene Fine Art</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        <!-- Home Button -->
+                        <li>
+                            <button class="btn" type="button" aria-expanded="false">
+                                <a style="color: black;" class="icon-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                    <i class="bi bi-house-fill"></i>
+                                </a>
+                            </button>
+                        </li>
+                        <!-- Store Dropdown -->
                         <li>
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Home
+                                    Store
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/Home/#">Home</a></li>
-                                    <li><a class="dropdown-item" href="/Home/History">History</a></li>
-                                    <li><a class="dropdown-item" href="/Home/Stories">Stories</a></li>
-                                    <li><a class="dropdown-item" href="/Home/Quiz">Quiz</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Store" asp-action="Index">Store</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Store" asp-action="Reviews">Reviews</a></li>
                                 </ul>
                             </div>
                         </li>
+                        <!-- Gallery Dropdown -->
                         <li>
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Sources
+                                    Gallery
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/Sources/#">Sources</a></li>
-                                    <li><a class="dropdown-item" href="/Sources/FanSites">Fan Sites</a></li>
-                                    <li><a class="dropdown-item" href="/Sources/News">News</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Gallery" asp-action="Index">Store Gallery</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Gallery" asp-action="Submissions">Submissions</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Gallery" asp-action="Events">Events</a></li>
                                 </ul>
                             </div>
                         </li>
+                        <!-- About Us -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="BookClub" asp-action="Index">Book Club</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">About Us</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +70,8 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - CS295_FinalProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - Eugene Fine Art - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <span class="float-end">EugeneFineArt@gmail.com</span>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

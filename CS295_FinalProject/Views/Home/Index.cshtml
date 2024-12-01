@@ -2,7 +2,42 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="d-flex justify-content-center parentContainer">
+    <img class="StoreImage" src="~/Images/StoreInterior1.jpg" alt="Store Interior">
+    <div class="ImageText">Eugene Fine Art</div>
+</div><br/>
+
+<!-- Store highlights -->
+<div class="row">
+    <div class="d-flex justify-content-center col">
+        <h1>Gift Exchange</h1>
+    </div>
+    <div class="d-flex justify-content-center col">
+        <h1>Brush Line</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="d-flex justify-content-center col">
+        <img class="HighlightImage" src="Images/ChristmasExchange.jpg" alt="Christmas Tree">
+    </div>
+    <div class="d-flex justify-content-center col">
+        <img class="HighlightImage" src="Images/Brushes.jpg" alt="New Brushes">
+    </div>
+</div>
+<div class="row">
+    <div class="d-flex justify-content-center col">
+        <p>
+            Join us in the store Saturday, December 14th for our
+            Christmas gift exchange. Click <a asp-area="" asp-controller="Gallery" asp-action="Events">HERE</a> for more
+            information!
+        </p>
+    </div>
+    <div class="d-flex justify-content-center col">
+        <p>
+            Discover your creativity with our all new in-house line
+            of brushes and paints! Purchases over $150 earn you a 
+            free class so you can master your new materials. View
+            them in store <a asp-area="" asp-controller="Store" asp-action="Index">HERE</a>.
+        </p>
+    </div>
 </div>
