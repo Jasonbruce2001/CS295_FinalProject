@@ -2,6 +2,7 @@ using CS295_FinalProject.Controllers;
 using CS295_FinalProject.Data;
 using CS295_FinalProject.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace UnitTests;
 
@@ -26,8 +27,8 @@ public class ReviewControllerTests
         _review.Reviewer = new User();
         var result = _controller.Reviews(new Review());
 
-        // assert: check to see if I got a RedirectToActionResult
-        Assert.True(result.GetType() == typeof(RedirectToActionResult));
+        // assert: check to see if I got a View
+        Assert.True(result.GetType() == typeof(ViewResult));
     }
 
 
@@ -39,7 +40,7 @@ public class ReviewControllerTests
         // act
         var result = _controller.Reviews(_review);
 
-        // assert: check to see if I got a RedirectToActionResult
+        // assert: check to see if I got a View
         Assert.True(result.GetType() == typeof(ViewResult));
     }
 }

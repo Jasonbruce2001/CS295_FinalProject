@@ -53,3 +53,7 @@ body {
   margin: 0 0 1vw 0;
 }
 
+.SubmissionImage {
+  height: 15vw;
+  width: 15vw;
+}

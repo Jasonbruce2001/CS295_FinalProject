@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ye0jtlLjsGOx4iwlX2NajIY7dGuAa2roklEsTK3FUNs=",
+  "Hash": "h/mvWE+5lM11XTxSZqJtlnjS10l0odzyvm+Mtkvs+tE=",
   "Source": "CS295_FinalProject",
   "BasePath": "_content/CS295_FinalProject",
   "Mode": "Default",
@@ -151,6 +151,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Images/ChristmasExchange.jpg"
+    },
+    {
+      "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/SquarePlaceholder.png",
+      "SourceId": "CS295_FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/",
+      "BasePath": "_content/CS295_FinalProject",
+      "RelativePath": "Images/SquarePlaceholder.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/SquarePlaceholder.png"
+    },
+    {
+      "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/SquarePlaceholder.svg",
+      "SourceId": "CS295_FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/",
+      "BasePath": "_content/CS295_FinalProject",
+      "RelativePath": "Images/SquarePlaceholder.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/SquarePlaceholder.svg"
     },
     {
       "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/StoreInterior1.jpg",

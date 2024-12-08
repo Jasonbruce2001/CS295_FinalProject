@@ -27,10 +27,10 @@ public class StoreController : Controller
     [HttpPost]
     public IActionResult Reviews(Review model)
     {
-        model.Date = DateTime.Now;  // Add date and time to the model
+        model.Date = DateOnly.FromDateTime(DateTime.Today);  // Add date and time to the model
         if (_repo.StoreReview(model) > 0)
         {
-            return RedirectToAction("Index", new { reviewId = model.Id });
+            return View(_repo.GetAllReviews());
         }
         else
         {

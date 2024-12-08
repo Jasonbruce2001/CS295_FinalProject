@@ -7,4 +7,68 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <!-- Featured Image -->
+        <div class="col-3">
+            
+        </div>
+        <div class="col-1">
+            <!-- Button for modal -->
+            <div class="text-center">
+                <button type="button" class="btn btn-primary modalButton" data-bs-toggle="modal" data-bs-target="#createPostModal">
+                    Add Submission
+                </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="createPostModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="createPostModalLabel">Add Submission</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Form input -->
+                            <div class="formArea">
+                                <form method="post" id="GallerySubmission">
+                                    <div class="col">
+                                        <!-- Submission Inputs -->
+                                        <div class="row">
+                                            <label>Title:</label>
+                                            <input name="Name" class="storyOther">
+                                        </div>
+
+                                        <!--<div class="row">
+                                            <label>Username:</label>
+                                            <input name="Username" class="storyOther">
+                                        </div>-->
+
+                                        <label for="Username">Choose a car:</label>
+                                        <select id="cars" name="Username" form="GallerySubmission">
+                                            <option value="volvo">Volvo</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="opel">Opel</option>
+                                            <option value="">Audi</option>
+                                        </select>
+
+                                        <div class="row">
+                                            <label>Link to image:</label>
+                                            <input name="Link" class="storyOther">
+                                        </div>
+
+                                        <input type="submit" value="Submit" style="margin-top: 5%;">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
+        </div>
+    </div>
+</div>
 
