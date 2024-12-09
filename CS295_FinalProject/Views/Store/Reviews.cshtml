@@ -1,0 +1,73 @@
+<div class="row pageHeader">
+    <h1>Eugene Fine Art Reviews</h1>
+    <div class="col-8">
+        <p>
+            This page is dedicated to reviews left by users like you!
+            We strive to improve our services, and would love to hear
+            your feedback on how we do as a store or how our website
+            preforms.
+        </p>
+    </div>
+    <div class="col-4">
+        <!-- Button for modal -->
+        <div class="text-center">
+            <button type="button" class="btn btn-secondary modalButton" data-bs-toggle="modal" data-bs-target="#createPostModal">
+                Leave a review
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="createPostModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="createPostModalLabel">Leave a review</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form input -->
+                        <div class="formArea">
+                            <form method="post" id="GallerySubmission">
+                                <div class="col">
+                                    <!-- Submission Inputs -->
+                                    <div class="row">
+                                        <label>Title:</label>
+                                        <input name="Name" class="storyOther">
+                                    </div>
+
+                                    <!--<div class="row">
+                                        <label>Username:</label>
+                                        <input name="Username" class="storyOther">
+                                    </div>-->
+
+                                    <label for="Username">Choose a car:</label>
+                                    <select id="cars" name="Username" form="GallerySubmission">
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="">Audi</option>
+                                    </select>
+
+                                    <div class="row">
+                                        <label>Link to image:</label>
+                                        <input name="Link" class="storyOther">
+                                    </div>
+
+                                    <input type="submit" value="Submit" style="margin-top: 5%;">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal -->
+    </div>
+</div>
+<div class="row">
+    <div class="d-flex justify-content-center">
+        <h2>Feature Message</h2>
+    </div>
+</div>

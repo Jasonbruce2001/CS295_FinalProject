@@ -1,25 +1,40 @@
+<!-- Page Header -->
 <div class="container text-center pageHeader">
     <div class="row">
         <h1>Gallery</h1>
     </div>
-    <div class="row">
-        <p>Short description of the page</p>
-    </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <!-- Featured Image -->
-        <div class="col-3">
-            
+        <div class="col-8">
+            <img src="~/Images/placeholder.png" alt="Featured Image of..." class="img-fluid">
+            <h2 class="FeaturedArtTag">Featured Artwork: Title By - Artist</h2>
         </div>
-        <div class="col-1">
+
+        <!-- Column for user submission -->
+        <div class="col-4">
+            <p style="text-indent: 2vw;">
+                In order to help new artists reach a wider audience, we decided to implement an 
+                online gallery of user submissions. This feature is available any time to all users,
+                however images are cleared once every two months.
+            </p>
+            
+            <p style="text-indent: 2vw;">    
+                In order to add a submission, click
+                the bottom below and fill out the form. The "link" section should go to a publicly 
+                hosted image site. Right-click your image on the site, navigate to "Open image in new tab"
+                and use that url.
+            </p>
+
             <!-- Button for modal -->
             <div class="text-center">
                 <button type="button" class="btn btn-primary modalButton" data-bs-toggle="modal" data-bs-target="#createPostModal">
                     Add Submission
                 </button>
             </div>
+
             <!-- Modal -->
             <div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="createPostModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -68,6 +83,49 @@
                 </div>
             </div>
             <!-- End Modal -->
+        </div>
+    </div>
+</div>
+
+<hr style="margin-bottom: 2vw;"/> <!-- Horizontal Rule -->
+
+<!-- Gallery Preview -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <img src="~/Images/SquarePlaceholder.png" alt="Preview 1" class="img-fluid galPreview">
+            <h4>Title - Artist Name</h4>
+        </div>
+        <div class="col-4">
+            <img src="~/Images/SquarePlaceholder.png" alt="Preview 2" class="img-fluid galPreview">
+            <h4>Title - Artist Name</h4>
+        </div>
+        <div class="col-4">
+            <img src="~/Images/SquarePlaceholder.png" alt="Preview 3" class="img-fluid galPreview">
+            <h4>Title - Artist Name</h4>
+        </div>
+    </div>
+    
+    <div class="row" style="margin-top: 3vw;">
+        <!-- Hours -->
+        <div class="col-2 hours">
+            <p>
+                Hours <br/>
+                Mon-Fri | 12pm to 4pm <br/>
+                Sat-Sun | 12pm to 7pm
+            </p>
+
+        </div>
+
+        <!-- Page Description -->
+        <div class="col-8">
+            <h4> Your Gateway to Artistic Discovery </h4>
+            <p>
+                Our free art gallery is a celebration of creativity, designed to welcome and inspire visitors of all ages. 
+                With exhibitions that regularly rotate, you’ll encounter stunning artworks from emerging local artists 
+                and even some guest spots from renowned artists. Come as you are; this space belongs to the community, and 
+                admission is always free.
+            </p>
         </div>
     </div>
 </div>

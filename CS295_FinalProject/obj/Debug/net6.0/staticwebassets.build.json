@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "h/mvWE+5lM11XTxSZqJtlnjS10l0odzyvm+Mtkvs+tE=",
+  "Hash": "R/MAb7Ll1qqe3wVZhTjNM4G4EZU0dFGiSRPkjFxI9Eo=",
   "Source": "CS295_FinalProject",
   "BasePath": "_content/CS295_FinalProject",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Images/ChristmasExchange.jpg"
+    },
+    {
+      "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/placeholder.png",
+      "SourceId": "CS295_FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/",
+      "BasePath": "_content/CS295_FinalProject",
+      "RelativePath": "Images/placeholder.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/placeholder.png"
     },
     {
       "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/SquarePlaceholder.png",
