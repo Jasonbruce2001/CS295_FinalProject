@@ -1,3 +1,5 @@
+@model List<Review>
+
 <div class="row pageHeader">
     <h1>Eugene Fine Art Reviews</h1>
     <div class="col-8">
@@ -28,31 +30,23 @@
                     </div>
                     <div class="modal-body">
                         <!-- Form input -->
-                        <div class="formArea">
+                        <div class="formArea formStyle">
                             <form method="post" id="GallerySubmission">
                                 <div class="col">
                                     <!-- Submission Inputs -->
                                     <div class="row">
-                                        <label>Title:</label>
-                                        <input name="Name" class="storyOther">
+                                        <label for="Reviewer">Username:</label>
+                                        <input type="text" name="Reviewer.Name" class="formInput">
                                     </div>
 
-                                    <!--<div class="row">
-                                        <label>Username:</label>
-                                        <input name="Username" class="storyOther">
-                                    </div>-->
-
-                                    <label for="Username">Choose a car:</label>
-                                    <select id="cars" name="Username" form="GallerySubmission">
-                                        <option value="volvo">Volvo</option>
-                                        <option value="saab">Saab</option>
-                                        <option value="opel">Opel</option>
-                                        <option value="">Audi</option>
-                                    </select>
-
                                     <div class="row">
-                                        <label>Link to image:</label>
-                                        <input name="Link" class="storyOther">
+                                        <label for="Score">Score:</label>
+                                        <input type="number" placeholder="1-10" name="Score" class="formInput" min="1" max="10">
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <label>Comments:</label>
+                                        <textarea name="Text" class="formTextArea"></textarea>
                                     </div>
 
                                     <input type="submit" value="Submit" style="margin-top: 5%;">
@@ -66,8 +60,40 @@
         <!-- End Modal -->
     </div>
 </div>
-<div class="row">
-    <div class="d-flex justify-content-center">
-        <h2>Feature Message</h2>
-    </div>
+
+<!-- Review output area -->
+<div class="d-flex justify-content-center">
+    <h2>Feature Message</h2>
+</div>
+
+<div class="container-fluid">
+    @if (Model.Count > 0)
+    {
+        //flag for if story should be given a grey or white background to help visually break up stories
+        bool alt = false;
+        foreach (Review r in Model)
+        {
+            if (!alt)
+            {
+                <div class="story clearfix shadow bg-white rounded">
+                    <h3>@r.Reviewer.Name | @r.Score /10</h3>
+                    <p>@r.Text</p>
+                </div>
+                alt = !alt;
+            }
+            else
+            {
+                <div class="story clearfix shadow bg-white rounded">
+                    
+                </div>
+                alt = !alt;
+            }
+        } 
+    }
+    else
+    {
+        <div class="text-center">
+            <h3>There are no reviews yet.</h3>
+        </div>
+    }
 </div>

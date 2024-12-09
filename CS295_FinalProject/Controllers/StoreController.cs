@@ -21,7 +21,8 @@ public class StoreController : Controller
 
     public IActionResult Reviews()
     {
-        return View();
+        List<Review> reviews = _repo.GetAllReviews();
+        return View(reviews);
     }
     
     [HttpPost]

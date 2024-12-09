@@ -69,3 +69,18 @@ body {
 .hours {
   border-right: solid 1px black;
 }
+
+.formInput {
+  width: 50%;
+  margin: auto 3%;
+}
+
+.formTextArea {
+  width: 90%;
+  height: 200px;
+  margin: auto 3%;
+}
+
+.formStyle {
+  color: black;
+}

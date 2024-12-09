@@ -33,7 +33,6 @@ public class GalleryController : Controller
     public IActionResult Index(Submission model)
     {
         model.Date = DateOnly.FromDateTime(DateTime.Today);  // Add date and time to the model
-        model.Username = _userRepo.GetUserById(17);
         
         if (_subRepo.StoreSubmission(model) > 0)
         {
@@ -41,7 +40,7 @@ public class GalleryController : Controller
         }
         else
         {
-            ViewBag.ErrorMessage = "There was an error saving the review.";
+            ViewBag.ErrorMessage = "There was an error saving your submission.";
             return View();
         }
     }
