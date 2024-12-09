@@ -13,8 +13,11 @@
      {
          if (!alt)
          {
-             <div class="story clearfix shadow bg-white rounded">
-                 <img src=@s.Link alt="User Submission" class="SubmissionImage">
+             <div class="submission clearfix shadow bg-white rounded">
+                 <div class="col-4">
+                     <img src=@s.Link alt="User Submission" class="img-fluid">
+                 </div>
+                 
                  <h4>@s.Name by <i>@s.Username.Name</i></h4>
                  <p class="float-end">Posted @s.Date</p>
              </div>
@@ -22,11 +25,14 @@
          }
          else
          {
-            <div class="story clearfix shadow bg-white rounded">
-                <img src=@s.Link alt="User Submission" class="SubmissionImage">
-                <h4>@s.Name by <i>@s.Username.Name</i></h4>
-                <p class="float-end">Posted @s.Date</p>
-            </div>
+             <div class="submission clearfix shadow bg-white rounded">
+                 <div class="col-4">
+                     <img src=@s.Link alt="User Submission" class="img-fluid">
+                 </div>
+                 
+                 <h4>@s.Name by <i>@s.Username.Name</i></h4>
+                 <p class="float-end">Posted @s.Date</p>
+             </div>
             alt = !alt;
          }
      }

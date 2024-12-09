@@ -47,7 +47,7 @@
                                     Gallery
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/Gallery/Index">Store Gallery</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Gallery" asp-action="Index">Store Gallery</a></li>
                                     <li><a class="dropdown-item" asp-area="" asp-controller="Gallery" asp-action="Submissions">Submissions</a></li>
                                     <li><a class="dropdown-item" asp-area="" asp-controller="Gallery" asp-action="Events">Events</a></li>
                                 </ul>
@@ -71,7 +71,8 @@
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - Eugene Fine Art - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            <span class="float-end">EugeneFineArt@gmail.com</span>
+            <span class="float-end"><a href= "mailto: EugeneFineArt@gmail.com">EugeneFineArt@gmail.com</a></span>
+            
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

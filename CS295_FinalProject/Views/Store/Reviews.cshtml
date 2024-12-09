@@ -1,5 +1,12 @@
 @model List<Review>
 
+<script>
+    <!--Temp fix to prevent resubmission of data on page refresh-->
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+
 <div class="row pageHeader">
     <h1>Eugene Fine Art Reviews</h1>
     <div class="col-8">
@@ -13,7 +20,7 @@
     <div class="col-4">
         <!-- Button for modal -->
         <div class="text-center">
-            <button type="button" class="btn btn-secondary modalButton" data-bs-toggle="modal" data-bs-target="#createPostModal">
+            <button type="button" class="btn btn-light modalButton" data-bs-toggle="modal" data-bs-target="#createPostModal">
                 Leave a review
             </button>
         </div>
@@ -61,11 +68,19 @@
     </div>
 </div>
 
-<!-- Review output area -->
-<div class="d-flex justify-content-center">
-    <h2>Feature Message</h2>
+<!-- Filter -->
+<div class="d-flex justify-content-center" style="margin-bottom: 1vw;">
+    <form method="post" action="/Store/Filter">
+        <label name="score">Rating</label>
+        <input name="score"/>
+        <label name="date">Date</label>
+        <input name="date" />
+        <button type="submit" class="btn btn-secondary">Submit</button>
+        <a href="/Store/Reviews" class="btn btn-danger">Reset</a>
+    </form>
 </div>
 
+<!-- Review output area -->
 <div class="container-fluid">
     @if (Model.Count > 0)
     {
@@ -75,16 +90,19 @@
         {
             if (!alt)
             {
-                <div class="story clearfix shadow bg-white rounded">
-                    <h3>@r.Reviewer.Name | @r.Score /10</h3>
+                <div class="review clearfix shadow bg-white rounded">
+                    <h3>@r.Reviewer.Name | @r.Score / 10</h3>
                     <p>@r.Text</p>
+                    <p class="text-end">@r.Date</p>
                 </div>
                 alt = !alt;
             }
             else
             {
-                <div class="story clearfix shadow bg-white rounded">
-                    
+                <div class="review clearfix shadow bg-white rounded">
+                    <h3>@r.Reviewer.Name | @r.Score / 10</h3>
+                    <p>@r.Text</p>
+                    <p class="text-end">@r.Date</p>
                 </div>
                 alt = !alt;
             }

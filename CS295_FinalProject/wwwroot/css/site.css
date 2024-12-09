@@ -84,3 +84,17 @@ body {
 .formStyle {
   color: black;
 }
+
+.review {
+  padding: 1vw;
+  margin-bottom: 1vw;
+}
+
+.submission {
+  padding: 1vw;
+  margin-bottom: 1vw;
+}
+
+.productTable {
+  
+}

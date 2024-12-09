@@ -8,20 +8,47 @@ public class SeedData
     {
         if (!context.Products.Any())
         {
-            Product product1 = new Product { Name = "Adjustable Wooden Easel", Description = "Full pine adjustable easel with carrying case" +
-                                             "and folds down completely. Full height is 5 feet 6 inches", UnitPrice = 160, QuantityOnHand = 6 };
-            Product product2 = new Product { Name = "Artist Loft Brush Set", Description = "7 piece synthetic brush set perfect for beginners", 
-                                             UnitPrice = 25, QuantityOnHand = 20 };
-            Product product3 = new Product { Name = "General Mills Charcoal", Description = "2 piece compressed charcoal stick pack", UnitPrice = 5, QuantityOnHand = 50 };
-            Product product4 = new Product { Name = "Titanium White Acrylic Paint", Description = "100ml tube by Winsor and Newton", UnitPrice = 10, QuantityOnHand = 32 };
-            Product product5 = new Product { Name = "12x24 Cotton Canvas Panel", Description = "100% cotton stretched canvas, pre primed for acrylic paint", 
-                                             UnitPrice = 8, QuantityOnHand = 24 };
-            
+            Product product1 = new Product { Name = "Alvin Drafting Compass", Description = "Professional-grade compass for precise circles", UnitPrice = 18, QuantityOnHand = 12 };
+            Product product2 = new Product { Name = "Winsor & Newton Oil Paint", Description = "37ml tube of ultramarine blue", UnitPrice = 12, QuantityOnHand = 30 };
+            Product product3 = new Product { Name = "Strathmore Sketch Pad", Description = "9x12 inch, 100 sheets, 60lb weight", UnitPrice = 15, QuantityOnHand = 25 };
+            Product product4 = new Product { Name = "Golden Acrylic Paint", Description = "59ml jar of titanium white", UnitPrice = 10, QuantityOnHand = 40 };
+            Product product5 = new Product { Name = "Liquitex Matte Medium", Description = "8oz bottle for acrylic painting", UnitPrice = 20, QuantityOnHand = 18 };
+            Product product6 = new Product { Name = "Canson Watercolor Paper", Description = "11x15 inch, 30 sheets, 140lb cold press", UnitPrice = 25, QuantityOnHand = 15 };
+            Product product7 = new Product { Name = "Prismacolor Premier Colored Pencils", Description = "Set of 24 high-quality colored pencils", UnitPrice = 35, QuantityOnHand = 10 };
+            Product product8 = new Product { Name = "Derwent Charcoal Pencils", Description = "Set of 4 charcoal pencils, various shades", UnitPrice = 8, QuantityOnHand = 22 };
+            Product product9 = new Product { Name = "Staedtler Technical Pens", Description = "Set of 3 pens with 0.1, 0.3, and 0.5mm tips", UnitPrice = 20, QuantityOnHand = 12 };
+            Product product10 = new Product { Name = "Sakura Micron Pen Set", Description = "Set of 6 archival ink pens, black", UnitPrice = 18, QuantityOnHand = 30 };
+            Product product11 = new Product { Name = "Pentel Brush Pen", Description = "Waterproof brush pen for calligraphy and illustration", UnitPrice = 15, QuantityOnHand = 28 };
+            Product product12 = new Product { Name = "Faber-Castell Kneaded Erasers", Description = "Pack of 3 erasers, ideal for graphite and charcoal", UnitPrice = 5, QuantityOnHand = 50 };
+            Product product13 = new Product { Name = "ArtBin Storage Case", Description = "Plastic storage case for art supplies, 16-inch", UnitPrice = 22, QuantityOnHand = 8 };
+            Product product14 = new Product { Name = "Royal & Langnickel Brush Set", Description = "Set of 12 synthetic brushes for acrylics", UnitPrice = 30, QuantityOnHand = 16 };
+            Product product15 = new Product { Name = "Daler-Rowney Watercolors", Description = "12-color compact set with mixing tray", UnitPrice = 25, QuantityOnHand = 20 };
+            Product product16 = new Product { Name = "Arches Watercolor Blocks", Description = "9x12 inch, 20 sheets, 100% cotton", UnitPrice = 45, QuantityOnHand = 12 };
+            Product product17 = new Product { Name = "Holbein Gouache Paint", Description = "Set of 12 vibrant opaque colors", UnitPrice = 40, QuantityOnHand = 14 };
+            Product product18 = new Product { Name = "Caran d'Ache Neocolor Crayons", Description = "Set of 10 water-soluble wax pastels", UnitPrice = 28, QuantityOnHand = 10 };
+            Product product19 = new Product { Name = "Yupo Paper Pad", Description = "11x14 inch, 10 sheets, synthetic watercolor paper", UnitPrice = 20, QuantityOnHand = 25 };
+            Product product20 = new Product { Name = "Montana Gold Spray Paint", Description = "400ml can of high-coverage matte spray paint", UnitPrice = 15, QuantityOnHand = 50 };
+                
             context.Products.Add(product1);
             context.Products.Add(product2);
             context.Products.Add(product3);
             context.Products.Add(product4);
             context.Products.Add(product5);
+            context.Products.Add(product6);
+            context.Products.Add(product7);
+            context.Products.Add(product8);
+            context.Products.Add(product9);
+            context.Products.Add(product10);
+            context.Products.Add(product11);
+            context.Products.Add(product12);   
+            context.Products.Add(product13);
+            context.Products.Add(product14);
+            context.Products.Add(product15);
+            context.Products.Add(product16);
+            context.Products.Add(product17);
+            context.Products.Add(product18);
+            context.Products.Add(product19);
+            context.Products.Add(product20);
             
             context.SaveChanges();
         }
