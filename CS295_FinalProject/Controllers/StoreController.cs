@@ -28,7 +28,19 @@ public class StoreController : Controller
         return View(reviews);
     }
     
-    public IActionResult Filter(int score, string date)
+    public IActionResult ProductFilter(string name)
+    {
+        var products = _productRepo.GetAllProducts()
+            .Where(p => name == null || p.Name.Contains(name))
+            .ToList();
+/*
+            var reviews = repo.GetReviews()
+                .Where(r => r.Reviewer.Name == reviewer|| reviewer == null)
+                .ToList();*/
+        return View("Index", products);
+    }
+    
+    public IActionResult ReviewFilter(int score, string date)
     {
         var reviews = _reviewRepo.GetAllReviews()
             .Where(r => score == null || r.Score == score)

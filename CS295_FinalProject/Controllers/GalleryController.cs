@@ -28,6 +28,24 @@ public class GalleryController : Controller
         List<Submission> submissions = _subRepo.GetAllSubmissions();
         return View(submissions);
     }
+
+    public IActionResult SortOldest()
+    {
+        var submissions = _subRepo.GetAllSubmissions()
+            .OrderBy(s => s.Date)
+            .ToList();
+        
+        return View("Submissions", submissions);
+    }
+
+    public IActionResult SortNewest()
+    {
+        var submissions = _subRepo.GetAllSubmissions()
+            .OrderByDescending(s => s.Date)
+            .ToList();
+        
+        return View("Submissions", submissions);
+    }
     
     [HttpPost]
     public IActionResult Index(Submission model)

@@ -69,8 +69,8 @@ public class SeedData
             context.Users.Add(user3);
             
             // Create Submission objects
-            Submission sub1 = new Submission { Name = "Animal Skulls #1", Username = user1, Link = "https://i.imgur.com/vcYOMu8.jpeg", Date = DateOnly.FromDateTime(DateTime.Now) };
-            Submission sub2 = new Submission { Name = "Human Skull #11", Username = user1, Link = "https://i.imgur.com/vcYOMu8.jpeg", Date = DateOnly.FromDateTime(DateTime.Now) };
+            Submission sub1 = new Submission { Name = "Animal Skull #1", Username = user1, Link = "https://i.imgur.com/TwX7oht.jpeg", Date = DateOnly.Parse("12/1/24") };
+            Submission sub2 = new Submission { Name = "Stippled Doberman", Username = user1, Link = "https://i.imgur.com/sJh3SCK.jpeg", Date = DateOnly.Parse("11/21/24") };
             Submission sub3 = new Submission { Name = "Example Submission 1", Username = user2, Link = "https://i.imgur.com/vcYOMu8.jpeg", Date = DateOnly.FromDateTime(DateTime.Now) };
             Submission sub4 = new Submission { Name = "Example Submission 2", Username = user3, Link = "https://i.imgur.com/vcYOMu8.jpeg", Date = DateOnly.FromDateTime(DateTime.Now) };
             
@@ -79,6 +79,16 @@ public class SeedData
             context.Submissions.Add(sub2);
             context.Submissions.Add(sub3);
             context.Submissions.Add(sub4);
+            
+            //create review objects
+            Review review1 = new Review { Reviewer = user1, Score = 10, Date = DateOnly.Parse("12/1/24"), Text = "I love the large selection here!"};
+            Review review2 = new Review { Reviewer = user2, Score = 9, Date = DateOnly.Parse("12/4/24"), Text = "The customer service in the store is great."}; 
+            Review review3 = new Review { Reviewer = user3, Score = 9, Date = DateOnly.FromDateTime(DateTime.Now), Text = "This is my favorite neighborhood store." };
+            
+            // queue review objects to be saved to DB
+            context.Reviews.Add(review1);
+            context.Reviews.Add(review2);
+            context.Reviews.Add(review3);
             
             context.SaveChanges(); // stores all the reviews in the DB
         }
