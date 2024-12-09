@@ -46,3 +46,4 @@
 /Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/bin/Debug/net6.0/xunit.core.dll
 /Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/bin/Debug/net6.0/xunit.execution.dotnet.dll
 /Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/obj/Debug/net6.0/CS295_FinalProject.csproj.CopyComplete
+/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/bin/Debug/net6.0/appsettings.Production.json

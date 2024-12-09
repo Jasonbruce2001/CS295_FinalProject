@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fm/Zv+AhOShIqZ5yFSBc7UmwYh77CvktXXCRxgl9rcw=",
+  "Hash": "Wl8x4HJhRYtYQJq1Hs9LVGcvYVQk3ViSxeLBET9w6Us=",
   "Source": "CS295_FinalProject",
   "BasePath": "_content/CS295_FinalProject",
   "Mode": "Default",
@@ -136,6 +136,23 @@
       "OriginalItemSpec": "wwwroot/Images/Brushes.jpg"
     },
     {
+      "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/CandleSkull.jpg",
+      "SourceId": "CS295_FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/",
+      "BasePath": "_content/CS295_FinalProject",
+      "RelativePath": "Images/CandleSkull.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/CandleSkull.jpg"
+    },
+    {
       "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/ChristmasExchange.jpg",
       "SourceId": "CS295_FinalProject",
       "SourceType": "Discovered",
@@ -170,6 +187,40 @@
       "OriginalItemSpec": "wwwroot/Images/christmasGifts.jpg"
     },
     {
+      "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/CowSkulls.jpeg",
+      "SourceId": "CS295_FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/",
+      "BasePath": "_content/CS295_FinalProject",
+      "RelativePath": "Images/CowSkulls.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/CowSkulls.jpeg"
+    },
+    {
+      "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/CrossHatchedSkull.jpg",
+      "SourceId": "CS295_FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/",
+      "BasePath": "_content/CS295_FinalProject",
+      "RelativePath": "Images/CrossHatchedSkull.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/CrossHatchedSkull.jpg"
+    },
+    {
       "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/gallery.jpg",
       "SourceId": "CS295_FinalProject",
       "SourceType": "Discovered",
@@ -185,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Images/gallery.jpg"
+    },
+    {
+      "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/MaskGoose.jpg",
+      "SourceId": "CS295_FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/",
+      "BasePath": "_content/CS295_FinalProject",
+      "RelativePath": "Images/MaskGoose.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/MaskGoose.jpg"
     },
     {
       "Identity": "/Users/jasonbruce/Documents/Lane Fall 2024/CS295N/CS295_FinalProject/CS295_FinalProject/wwwroot/Images/placeholder.png",
