@@ -53,3 +53,44 @@ body {
   margin: 0 0 1vw 0;
 }
 
+.SubmissionImage {
+  height: 15vw;
+  width: 15vw;
+}
+
+.FeaturedArtTag {
+  padding-top: 2vw;
+}
+
+.galPreview {
+  margin-bottom: 1vw;
+}
+
+.hours {
+  border-right: solid 1px black;
+}
+
+.formInput {
+  width: 50%;
+  margin: auto 3%;
+}
+
+.formTextArea {
+  width: 90%;
+  height: 200px;
+  margin: auto 3%;
+}
+
+.formStyle {
+  color: black;
+}
+
+.review {
+  padding: 1vw;
+  margin-bottom: 1vw;
+}
+
+.submission {
+  padding: 1vw;
+  margin-bottom: 1vw;
+}

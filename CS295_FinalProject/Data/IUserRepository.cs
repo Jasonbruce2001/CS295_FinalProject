@@ -5,6 +5,6 @@ namespace CS295_FinalProject.Data;
 public interface IUserRepository
 {
     public List<User> GetUsers();
-    public User GetUserById(int id); // Returns a model object
+    public User GetUserById(int id);
     public int StoreUser(User model);   
 }

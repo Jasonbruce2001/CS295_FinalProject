@@ -31,7 +31,7 @@ public class SubmissionRepository : ISubmissionRepository
    
     public int StoreSubmission(Submission model)
     {
-        model.Date = DateTime.Now;
+        model.Date = DateOnly.FromDateTime(DateTime.Today);
         _context.Submissions.Add(model);
         return _context.SaveChanges();
         // returns a positive value if successful

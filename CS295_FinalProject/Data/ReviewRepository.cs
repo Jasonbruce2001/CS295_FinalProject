@@ -31,7 +31,7 @@ public class ReviewRepository : IReviewRepository
    
     public int StoreReview(Review model)
     {
-        model.Date = DateTime.Now;
+        model.Date = DateOnly.FromDateTime(DateTime.Today);
         _context.Reviews.Add(model);
         return _context.SaveChanges();
         // returns a positive value if successful

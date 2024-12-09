@@ -7,30 +7,59 @@ namespace CS295_FinalProject.Controllers;
 
 public class StoreController : Controller
 {
-    private readonly IReviewRepository _repo;
+    private readonly IReviewRepository _reviewRepo;
+    private readonly IProductRepository _productRepo;
 
-    public StoreController(IReviewRepository r)
+    public StoreController(IReviewRepository r, IProductRepository p)
     {
-        _repo = r;
+        _reviewRepo = r;
+        _productRepo = p;
     }
 
     public IActionResult Index()
     {
-        return View();
+        List<Product> products = _productRepo.GetAllProducts();
+        return View(products);
     }
 
     public IActionResult Reviews()
     {
-        return View();
+        List<Review> reviews = _reviewRepo.GetAllReviews();
+        return View(reviews);
+    }
+    
+    public IActionResult ProductFilter(string name)
+    {
+        var products = _productRepo.GetAllProducts()
+            .Where(p => name == null || p.Name.Contains(name))
+            .ToList();
+/*
+            var reviews = repo.GetReviews()
+                .Where(r => r.Reviewer.Name == reviewer|| reviewer == null)
+                .ToList();*/
+        return View("Index", products);
+    }
+    
+    public IActionResult ReviewFilter(int score, string date)
+    {
+        var reviews = _reviewRepo.GetAllReviews()
+            .Where(r => score == null || r.Score == score)
+            .Where(r => date == null || r.Date ==  DateOnly.Parse(date))
+            .ToList();
+/*
+            var reviews = repo.GetReviews()
+                .Where(r => r.Reviewer.Name == reviewer|| reviewer == null)
+                .ToList();*/
+        return View("Reviews", reviews);
     }
     
     [HttpPost]
     public IActionResult Reviews(Review model)
     {
-        model.Date = DateTime.Now;  // Add date and time to the model
-        if (_repo.StoreReview(model) > 0)
+        model.Date = DateOnly.FromDateTime(DateTime.Today);  // Add date and time to the model
+        if (_reviewRepo.StoreReview(model) > 0)
         {
-            return RedirectToAction("Index", new { reviewId = model.Id });
+            return View(_reviewRepo.GetAllReviews());
         }
         else
         {

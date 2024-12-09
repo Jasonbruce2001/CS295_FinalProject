@@ -1,10 +1,125 @@
+@{
+ViewData["Title"] = "Gallery";
+}
+
+<!-- Page Header -->
 <div class="container text-center pageHeader">
     <div class="row">
         <h1>Gallery</h1>
     </div>
+</div>
+
+<div class="container-fluid">
     <div class="row">
-        <p>Short description of the page</p>
+        <!-- Featured Image -->
+        <div class="col-8">
+            <img src="~/Images/CowSkulls.jpeg" alt="Featured Image of..." class="img-fluid">
+            <h2 class="FeaturedArtTag">Featured Artwork</h2>
+        </div>
+
+        <!-- Column for user submission -->
+        <div class="col-4">
+            <p style="text-indent: 2vw;">
+                In order to help new artists reach a wider audience, we decided to implement an 
+                online gallery of user submissions. This feature is available any time to all users,
+                however images are cleared once every two months.
+            </p>
+            
+            <p style="text-indent: 2vw;">    
+                In order to add a submission, click
+                the bottom below and fill out the form. The "link" section should go to a publicly 
+                hosted image site. Right-click your image on the site, navigate to "Open image in new tab"
+                and use that url.
+            </p>
+
+            <!-- Button for modal -->
+            <div class="text-center">
+                <button type="button" class="btn btn-primary modalButton" data-bs-toggle="modal" data-bs-target="#createPostModal">
+                    Add Submission
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="createPostModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="createPostModalLabel">Add Submission</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Form input -->
+                            <div class="formArea">
+                                <form method="post" id="GallerySubmission">
+                                    <div class="col">
+                                        <!-- Submission Inputs -->
+                                        <div class="row">
+                                            <label>Title:</label>
+                                            <input name="Name" class="formInput">
+                                        </div>
+
+                                        <div class="row">
+                                            <label>Username:</label>
+                                            <input name="Username.Name" class="formInput">
+                                        </div>
+
+                                        <div class="row">
+                                            <label>Link to image:</label>
+                                            <input name="Link" class="formInput">
+                                        </div>
+
+                                        <input type="submit" value="Submit" style="margin-top: 5%;">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
+        </div>
     </div>
 </div>
 
+<hr style="margin-bottom: 2vw;"/> <!-- Horizontal Rule -->
+
+<!-- Gallery Preview -->
+<div class="container-fluid">
+    <div class="row previewImages">
+        <div class="col-4">
+            <img src="~/Images/CandleSkull.jpg" alt="Preview 1" class="img-fluid ">
+        </div>
+        <div class="col-4">
+            <img src="~/Images/MaskGoose.jpg" alt="Preview 2" class="img-fluid">
+        </div>
+        <div class="col-4">
+            <img src="~/Images/CrossHatchedSkull.jpg" alt="Preview 3" class="img-fluid">
+        </div>
+    </div>
+    
+    <div class="row" style="margin-top: 3vw;">
+        <!-- Hours -->
+        <div class="col-2 hours">
+            <p>
+                Hours <br/>
+                Mon-Fri | 12pm to 4pm <br/>
+                Sat-Sun | 12pm to 7pm
+            </p>
+
+        </div>
+
+        <!-- Page Description -->
+        <div class="col-8">
+            <h4> Your Gateway to Artistic Discovery </h4>
+            <p>
+                Our free art gallery is a celebration of creativity, designed to welcome and inspire visitors of all ages. 
+                With exhibitions that regularly rotate, you’ll encounter stunning artworks from emerging local artists 
+                and even some guest spots from renowned artists. Come as you are; this space belongs to the community, and 
+                admission is always free.
+            </p>
+        </div>
+    </div>
+</div>
 

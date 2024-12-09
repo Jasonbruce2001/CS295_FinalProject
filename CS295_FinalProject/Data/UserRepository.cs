@@ -27,7 +27,7 @@ public class UserRepository : IUserRepository
    
     public int StoreUser(User model)
     {
-        model.CreateDate = DateTime.Now;
+        model.CreateDate = DateOnly.FromDateTime(DateTime.Today);
         _context.Users.Add(model);
         return _context.SaveChanges();
         // returns a positive value if successful
